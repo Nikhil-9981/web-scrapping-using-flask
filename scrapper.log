@@ -1,0 +1,243 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.18:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.18:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/app.py", line 13, in homepage
+    return render_template("index.html")
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 14:26:17] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/app.py", line 13, in homepage
+    return render_template("index.html")
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 14:26:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.18:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/app.py", line 13, in homepage
+    return render_template("index.html")
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 14:28:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/app.py", line 13, in homepage
+    return render_template("index.html")
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 14:29:17] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.18:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/app.py", line 13, in homepage
+    return render_template("index.html")
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 14:32:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 14:32:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.18.0.18:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.18:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 14:40:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 14:40:43] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 14:40:43] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 14:40:54] "[33mPOST /review HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.18:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:00:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:00:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:00:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'realme6i', 'Name': 'Jagan Behera', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'Very good mobile phone'}, {'Product': 'realme6i', 'Name': 'ANIRBAN  Palodhy', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'Camera is amazing.... Low light performance is also accurate.... Non oversaturted image color.... Dynamic range is good.....my ph takes time to be fully charged around 1 hr......, Display is fantastic with 90hardz & with 480 nits..,Bettery lasts around 10 hrs.... For hardcore use..., Calling experience is amazing, noise cancellesion is also nice.....Over all multitasking phone under this segment..... & no heating issues are present till now..'}, {'Product': 'realme6i', 'Name': 'Avinash  Rawat', 'Rating': '5', 'CommentHead': 'Simply awesome', 'Comment': 'best phone in its range.. very good and fast performance.very responsive fingerprint sensor.'}, {'Product': 'realme6i', 'Name': 'Subhankar Bhadra', 'Rating': '5', 'CommentHead': 'Simply awesome', 'Comment': "Complete value for money.* Awesome display with 90 Hz refresh rate for ultra smooth performance.* Best in class performance.* Great Battery backup.* Camera is best in class.* Build quality is really good.Really can't see any cons. 100% recommend."}, {'Product': 'realme6i', 'Name': 'Samrat Kadam', 'Rating': '5', 'CommentHead': 'Highly recommended', 'Comment': 'Nice mobile best camera phone 👍👍👍👌'}, {'Product': 'realme6i', 'Name': 'Kata  Kotireddy ', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'Battery is good ,for normal use it comes for 3daysand 8hrs non stop online usageGood display Good performance Fast charging Overall nice'}, {'Product': 'realme6i', 'Name': 'Pawan Kumar Verma', 'Rating': '5', 'CommentHead': 'Highly recommended', 'Comment': 'Fabulous Camera ...'}, {'Product': 'realme6i', 'Name': 'Flipkart Customer', 'Rating': '5', 'CommentHead': 'Great product', 'Comment': 'Awesome'}, {'Product': 'realme6i', 'Name': 'Abhimanyu Bhola', 'Rating': '4', 'CommentHead': 'Pretty good', 'Comment': 'Awesome'}, {'Product': 'realme6i', 'Name': 'Md Ramij Raja', 'Rating': '4', 'CommentHead': 'Worth the money', 'Comment': 'CPU is powerful for gaming specially PubG. so smooth game play...'}, {'Product': 'realme6i', 'Name': 'Md Ramij Raja', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': 'CPU is powerful for gaming specially PubG. so smooth game play...'}]
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:00:35] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:00:35] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:00:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.18:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:10:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:10:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:10:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:root:documents must be a non-empty list
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:11:00] "POST /review HTTP/1.1" 200 -
+INFO:root:documents must be a non-empty list
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:11:10] "POST /review HTTP/1.1" 200 -
+INFO:root:documents must be a non-empty list
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:11:24] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.18:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:batch op errors occurred, full error: {'writeErrors': [{'index': 0, 'code': 11000, 'errmsg': "E11000 duplicate key error collection: web-scrapping.web-scrap index: _id_ dup key: { _id: ObjectId('64be486a8f51678b89421be8') }", 'keyPattern': {'_id': 1}, 'keyValue': {'_id': ObjectId('64be486a8f51678b89421be8')}, 'op': {'Product': 'realme6i', 'Name': 'Jagan Behera', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'Very good mobile phone', '_id': ObjectId('64be486a8f51678b89421be8')}}], 'writeConcernErrors': [], 'nInserted': 0, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:16:18] "POST /review HTTP/1.1" 200 -
+INFO:root:batch op errors occurred, full error: {'writeErrors': [{'index': 0, 'code': 11000, 'errmsg': "E11000 duplicate key error collection: web-scrapping.web-scrap index: _id_ dup key: { _id: ObjectId('64be48708f51678b89421bea') }", 'keyPattern': {'_id': 1}, 'keyValue': {'_id': ObjectId('64be48708f51678b89421bea')}, 'op': {'Product': 'realme6i', 'Name': 'Jagan Behera', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'Very good mobile phone', '_id': ObjectId('64be48708f51678b89421bea')}}], 'writeConcernErrors': [], 'nInserted': 0, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:16:24] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.18:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:20:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:20:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:20:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'realme6i', 'Name': 'Jagan Behera', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'Very good mobile phone'}, {'Product': 'realme6i', 'Name': 'ANIRBAN  Palodhy', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'Camera is amazing.... Low light performance is also accurate.... Non oversaturted image color.... Dynamic range is good.....my ph takes time to be fully charged around 1 hr......, Display is fantastic with 90hardz & with 480 nits..,Bettery lasts around 10 hrs.... For hardcore use..., Calling experience is amazing, noise cancellesion is also nice.....Over all multitasking phone under this segment..... & no heating issues are present till now..'}, {'Product': 'realme6i', 'Name': 'Avinash  Rawat', 'Rating': '5', 'CommentHead': 'Simply awesome', 'Comment': 'best phone in its range.. very good and fast performance.very responsive fingerprint sensor.'}, {'Product': 'realme6i', 'Name': 'Subhankar Bhadra', 'Rating': '5', 'CommentHead': 'Simply awesome', 'Comment': "Complete value for money.* Awesome display with 90 Hz refresh rate for ultra smooth performance.* Best in class performance.* Great Battery backup.* Camera is best in class.* Build quality is really good.Really can't see any cons. 100% recommend."}, {'Product': 'realme6i', 'Name': 'Samrat Kadam', 'Rating': '5', 'CommentHead': 'Highly recommended', 'Comment': 'Nice mobile best camera phone 👍👍👍👌'}, {'Product': 'realme6i', 'Name': 'Kata  Kotireddy ', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'Battery is good ,for normal use it comes for 3daysand 8hrs non stop online usageGood display Good performance Fast charging Overall nice'}, {'Product': 'realme6i', 'Name': 'Pawan Kumar Verma', 'Rating': '5', 'CommentHead': 'Highly recommended', 'Comment': 'Fabulous Camera ...'}, {'Product': 'realme6i', 'Name': 'Flipkart Customer', 'Rating': '5', 'CommentHead': 'Great product', 'Comment': 'Awesome'}, {'Product': 'realme6i', 'Name': 'Abhimanyu Bhola', 'Rating': '4', 'CommentHead': 'Pretty good', 'Comment': 'Awesome'}, {'Product': 'realme6i', 'Name': 'Md Ramij Raja', 'Rating': '4', 'CommentHead': 'Worth the money', 'Comment': 'CPU is powerful for gaming specially PubG. so smooth game play...'}, {'Product': 'realme6i', 'Name': 'Md Ramij Raja', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': 'CPU is powerful for gaming specially PubG. so smooth game play...'}]
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:20:40] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:20:40] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:20:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'iphone11', 'Name': 'Manish  Deshlahare', 'Rating': '5', 'CommentHead': 'Terrific', 'Comment': 'Very very good'}, {'Product': 'iphone11', 'Name': 'Vishnu Ramakrishnan', 'Rating': '5', 'CommentHead': 'Classy product', 'Comment': 'Camera is awesomeBest battery backupA performer 👌🏻It will be a real value for money if they provide charger and earphone inbox!'}, {'Product': 'iphone11', 'Name': 'Flipkart Customer', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'This is amazing at all'}, {'Product': 'iphone11', 'Name': 'siva sankar', 'Rating': '5', 'CommentHead': 'Mind-blowing purchase', 'Comment': 'Photos super'}, {'Product': 'iphone11', 'Name': 'vikash  Yadav', 'Rating': '5', 'CommentHead': 'Must buy!', 'Comment': 'It’s really awesome'}, {'Product': 'iphone11', 'Name': 'Sakshi Bharti', 'Rating': '5', 'CommentHead': 'Fabulous!', 'Comment': 'Super🔥 and good performance 👌❤️'}, {'Product': 'iphone11', 'Name': 'Kuldeep Kumar', 'Rating': '5', 'CommentHead': 'Perfect product!', 'Comment': 'V Good all'}, {'Product': 'iphone11', 'Name': 'Vikram rapolu', 'Rating': '5', 'CommentHead': 'Just wow!', 'Comment': 'Perfect Product!!'}, {'Product': 'iphone11', 'Name': 'Steevan Rattra ', 'Rating': '5', 'CommentHead': 'Best in the market!', 'Comment': 'Good Camera'}, {'Product': 'iphone11', 'Name': 'Abhishek Sachdeva', 'Rating': '5', 'CommentHead': 'Worth every penny', 'Comment': 'Feeling awesome after getting the delivery of my phone. Dual speakers makes the sound quality very loud. Amazing!!'}, {'Product': 'iphone11', 'Name': 'Abhishek Sachdeva', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': 'Feeling awesome after getting the delivery of my phone. Dual speakers makes the sound quality very loud. Amazing!!'}]
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:20:57] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:20:57] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [24/Jul/2023 15:20:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.18:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
